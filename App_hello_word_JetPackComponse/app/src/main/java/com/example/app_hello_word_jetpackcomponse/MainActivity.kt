@@ -3,6 +3,7 @@ package com.example.app_hello_word_jetpackcomponse
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -15,29 +16,28 @@ import com.example.app_hello_word_jetpackcomponse.ui.theme.App_hello_word_JetPac
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            App_hello_word_JetPackComponseTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
+        setContent{
+            Column() {
+                Text(text = "Este es mi primer programa...", style = MaterialTheme.typography.h4)
+                PersonalData(name = "Mark Albert")
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+private fun PersonalData(name : String){
+    MaterialTheme(){
+        Column() {
+            Text(text = "Mi nombre es $name")
+            Text(text = "Seccion WX71")
+            Text(text = "Viernes 01/04....")
+        }
+    }
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun DefaultPreview() {
-    App_hello_word_JetPackComponseTheme {
-        Greeting("Android")
-    }
+fun PreviewPersonalData(){
+    PersonalData(name = "App para Dispositivos Moviles")
 }
