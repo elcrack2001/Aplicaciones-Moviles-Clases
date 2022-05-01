@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppSem05_02_AgendaRecyclerView</string>
+    <string name="nombre">Ingrese el nombre</string>
+    <string name="telefono">Ingrese el telefono</string>
+</resources>
