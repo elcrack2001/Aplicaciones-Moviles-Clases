@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyAlbum</string>
+    <string name="my_albums">MY ALBUMS</string>
+    <string name="detail_album_by_id">Detail Album By ID</string>
+    <string name="album_id">Ingrese el ID del Album</string>
+    <string name="consultar">Consultar</string>
+    <string name="userid">UserId</string>
+    <string name="id">Id</string>
+    <string name="title">Title</string>
+    <string name="listado_de_album">Listado de Album</string>
+</resources>
