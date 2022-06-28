@@ -2,6 +2,7 @@ package com.upc.pe.myalbum
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
@@ -46,7 +47,7 @@ class ListActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<List<Album>>, t: Throwable) {
-                TODO("Not yet implemented")
+                Toast.makeText(this@ListActivity, "No se pudo conectar, Intente de nuevo porfavor", Toast.LENGTH_LONG).show()
             }
         })
     }

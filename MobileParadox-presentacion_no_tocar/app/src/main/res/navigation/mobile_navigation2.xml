@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/publishedWorksFragment">
+
+    <fragment
+        android:id="@+id/publishedWorksFragment"
+        android:name="com.example.paradox.ui.publishedworksm.PublishedWorksFragment"
+        android:label="fragment_published_works"
+        tools:layout="@layout/fragment_published_works" />
+    <fragment
+        android:id="@+id/publicar_anuncio"
+        android:name="com.example.paradox.ui.gallery.GalleryFragment"
+        android:label="@string/Mispostulaciones"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/mi_perfil"
+        android:name="com.example.paradox.ui.profiles.SeeProfilePostulantB"
+        android:label="@string/miPerfil"
+        tools:layout="@layout/fragment_see_profile_postulant_b" />
+
+    <fragment
+        android:id="@+id/profProfileFragment"
+        android:name="com.example.paradox.ui.profiles.SeeProfProfileB"
+        android:label="Mi perfil profesional"
+        tools:layout="@layout/fragment_my_profile_employeer" />
+
+    <!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.paradox.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/miPerfil"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+</navigation>

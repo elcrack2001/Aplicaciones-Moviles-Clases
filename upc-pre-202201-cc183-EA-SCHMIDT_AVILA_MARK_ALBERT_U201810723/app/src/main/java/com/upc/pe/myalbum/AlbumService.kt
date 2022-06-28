@@ -5,9 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface AlbumService {
-    @GET("albums/")
+    @GET("album/")
     fun BuscarAlbumById(@Query("id") id: Int): Call<List<Album>>
 
-    @GET("albums/")
+    @GET("album/")
     fun AllAbulm(@Query("format") format: String): Call<List<Album>>
 }
